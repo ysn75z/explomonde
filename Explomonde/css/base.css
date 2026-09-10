@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: var(--espace);
+    background: var(--couleur-fond);
+    color: var(--couleur-texte);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    padding: var(--espace);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: var(--rayon);
+}

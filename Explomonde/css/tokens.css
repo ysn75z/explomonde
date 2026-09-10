@@ -1,0 +1,15 @@
+:root {
+    --couleur-principale: #222;
+    --couleur-fond: white;
+    --couleur-texte: #222;
+    --couleur-bordure: #ddd;
+    --espace: 16px;
+    --rayon: 8px;
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --couleur-fond: #222;
+            --couleur-texte: #fff;
+            --couleur-bordure: #555;
+        }
+    }
+}
