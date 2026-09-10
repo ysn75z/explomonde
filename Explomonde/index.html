@@ -2,24 +2,34 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Explomonde</title>
+    <title>Explomonde - Recherche de pays</title>
 </head>
 <body>
 
 <header>
     <h1>Explomonde</h1>
-    <nav>Accueil - Pays - Régions</nav>
+    <nav>
+        <a href="#contenu">Aller au contenu</a>
+        <a href="#">Accueil</a>
+        <a href="#">Pays</a>
+        <a href="#">Régions</a>
+    </nav>
 </header>
 
-<main>
+<main id="contenu">
+
     <section>
         <h2>Recherche</h2>
-        <input type="text">
-        <button>Rechercher</button>
+        <form>
+            <label for="recherche">Rechercher un pays :</label>
+            <input type="text" id="recherche" name="recherche">
+            <button type="submit">Rechercher</button>
+        </form>
     </section>
 
     <section>
         <h2>Résultats</h2>
+        <div role="status">Résultats prêts</div>
 
         <article>
             <h3>France</h3>
@@ -42,6 +52,7 @@
             <p>Population : 216 millions</p>
         </article>
     </section>
+
 </main>
 
 <footer>
