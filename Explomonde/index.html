@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explomonde permet de rechercher et découvrir des pays du monde."
+    >
+
     <title>Explomonde - Recherche de pays</title>
 
     <link rel="stylesheet" href="css/tokens.css">
@@ -16,11 +22,11 @@
 <header>
     <h1>Explomonde</h1>
 
-    <nav>
+    <nav aria-label="Navigation principale">
         <a href="#contenu">Aller au contenu</a>
-        <a href="#">Accueil</a>
-        <a href="#">Pays</a>
-        <a href="#">Régions</a>
+        <a href="#contenu">Accueil</a>
+        <a href="#grille">Pays</a>
+        <a href="#filtre-region">Régions</a>
     </nav>
 </header>
 
@@ -63,7 +69,7 @@
 
         <div id="grille" class="grille"></div>
 
-        <article id="detail"></article>
+        <div id="detail"></div>
 
     </section>
 
