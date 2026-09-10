@@ -24,6 +24,7 @@
 
     <section>
         <h2>Recherche</h2>
+
         <form>
             <label for="recherche">Rechercher un pays :</label>
             <input type="text" id="recherche" name="recherche">
@@ -33,28 +34,22 @@
 
     <section>
         <h2>Résultats</h2>
-        <div role="status">Résultats prêts</div>
+        <label for="filtre-region">Filtrer par région :</label>
 
-        <article>
-            <h3>France</h3>
-            <p>Capitale : Paris</p>
-            <p>Région : Europe</p>
-            <p>Population : 68 millions</p>
-        </article>
+        <select id="filtre-region">
+            <option value="Toutes">Toutes</option>
+            <option value="Europe">Europe</option>
+            <option value="Asie">Asie</option>
+            <option value="Afrique">Afrique</option>
+            <option value="Amérique du Nord">Amérique du Nord</option>
+            <option value="Amérique du Sud">Amérique du Sud</option>
+            <option value="Océanie">Océanie</option>
+        </select>
+        <div id="statut" role="status" aria-live="polite">
+            Résultats prêts
+        </div>
 
-        <article>
-            <h3>Japon</h3>
-            <p>Capitale : Tokyo</p>
-            <p>Région : Asie</p>
-            <p>Population : 124 millions</p>
-        </article>
-
-        <article>
-            <h3>Brésil</h3>
-            <p>Capitale : Brasilia</p>
-            <p>Région : Amérique du Sud</p>
-            <p>Population : 216 millions</p>
-        </article>
+        <div id="grille" class="grille"></div>
     </section>
 
 </main>
@@ -62,6 +57,8 @@
 <footer>
     <p>Explomonde 2026</p>
 </footer>
+
+<script type="module" src="js/main.js"></script>
 
 </body>
 </html>
