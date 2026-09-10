@@ -1,7 +1,9 @@
 export function creerCarte(pays) {
     const article = document.createElement("article");
+
     article.className = "carte";
     article.dataset.code = pays.code;
+    article.style.cursor = "pointer";
 
     const titre = document.createElement("h3");
     titre.textContent = pays.nom;
@@ -13,7 +15,7 @@ export function creerCarte(pays) {
     region.textContent = "Région : " + pays.region;
 
     const population = document.createElement("p");
-    population.textContent = "Population : " + pays.population.toLocaleString();
+    population.textContent = "Population : " + pays.population;
 
     article.append(titre, capitale, region, population);
 
@@ -23,7 +25,9 @@ export function creerCarte(pays) {
 export function afficherListe(liste, conteneur) {
     const fragment = document.createDocumentFragment();
 
-    liste.forEach(p => fragment.append(creerCarte(p)));
+    liste.forEach(pays => {
+        fragment.append(creerCarte(pays));
+    });
 
     conteneur.replaceChildren(fragment);
 }
